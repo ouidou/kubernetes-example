@@ -4,7 +4,7 @@ Nous avons souhaité montrer les capacités de Kubernetes au travers de la vie d
 
 Vous trouverez dans ce repository le support de présentation de cette demo ainsi que les fichiers de déploiement et dockerfile de notre application. 
 
-## [Présentation](https://ouidou.github.io/kubernetes-example/docs)
+## [Présentation](https://ouidou.github.io/kubernetes-example/)
 
 ## Prérequis
 
@@ -30,4 +30,4 @@ Pour faire fonctionner tout ce qui est ici vous allez avoir besoin de plusieurs 
 
 ## Présentation
 
-La présentation est faite en [reveal.js](https://revealjs.com/#/) et est accessible sur ce dépôt via Github Pages [ici](https://ouidou.github.io/kubernetes-example/docs).
+La présentation est faite en [reveal.js](https://revealjs.com/#/) et est accessible sur ce dépôt via Github Pages [ici](https://ouidou.github.io/kubernetes-example/).
