@@ -1589,3 +1589,9 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+html.qui body {
+  background:url("images/qui-est-ouidou.png");
+  background-position:center;
+  background-size: 100%;
+}

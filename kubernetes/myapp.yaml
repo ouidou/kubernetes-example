@@ -1,0 +1,67 @@
+apiVersion: v1
+items:
+- apiVersion: v1
+  kind: Service
+  metadata:
+    labels:
+      app: myapp
+    name: myapp
+  spec:
+    ports:
+    - name: "8090"
+      port: 8090
+      targetPort: 8090
+    selector:
+      app: myapp
+  status:
+    loadBalancer: {}
+- apiVersion: extensions/v1beta1
+  kind: Deployment
+  metadata:
+    labels:
+      app: myapp
+    name: myapp
+  spec:
+    replicas: 1
+    template:
+      metadata:
+        labels:
+          app: myapp
+      spec:
+        containers:
+        - env:
+          - name: APP_PORT
+            value: "8090"
+          - name: ENVIRONMENT
+            value: "kubernetes"
+          - name: MY_NODE_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: spec.nodeName
+          - name: MY_POD_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
+          - name: MY_POD_NAMESPACE
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.namespace
+          - name: MY_POD_IP
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP
+          image: docker.ouidou.fr/meetkube/myapp:latest
+          name: myapp
+          ports:
+          - containerPort: 8090
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "100m"
+            limits:
+              memory: "128Mi"
+              cpu: "200m"
+        imagePullSecrets:
+          - name: regcred
+        restartPolicy: Always
+kind: List
