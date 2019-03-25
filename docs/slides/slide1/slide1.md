@@ -2,4 +2,4 @@
 
 > Une présentation de Ouidou Consulting
 
-![alt text](https://www.ouidou.fr/wp-content/uploads/2018/12/logo_ouidou.png "Logo Ouidou")
+![alt text](https://pbs.twimg.com/profile_images/1085586912910430210/96gwWvcA_400x400.jpg "Logo Ouidou")
