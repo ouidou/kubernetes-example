@@ -6,4 +6,4 @@
 - Ingress
 - etc...
 
-On va mettre quelques mots la dessus.
+On va mettre quelques mots là-dessus.
