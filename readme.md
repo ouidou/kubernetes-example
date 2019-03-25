@@ -4,7 +4,7 @@ Nous avons souhaité montrer les capacités de Kubernetes au travers de la vie d
 
 Vous trouverez dans ce repository le support de présentation de cette demo ainsi que les fichiers de déploiement et dockerfile de notre application. 
 
-## [Présentation](https://ouidou.github.io/kubernetes-example/)
+## [--> Présentation <--](https://ouidou.github.io/kubernetes-example/)
 
 ## Prérequis
 
