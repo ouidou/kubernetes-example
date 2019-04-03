@@ -4,7 +4,8 @@
 
 - Pod : plus petite entité de Kubernetes. La maison du container.
 - Il peut contenir plusieurs containers.
-- Il partage le réseau de son namespace
+- Il a une ip interne sur le cluster
+- On le déploie dans un namespace (formalité de nommage)
 
 Nous allons voir comment nous pouvons déployer un pod au travers d'un fichier .yaml.
 
